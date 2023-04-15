@@ -1,70 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Diplomata&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto Mono';
-  font-size: 18px;
-}
 
-/* font-family: 'Diplomata', cursive; */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Diplomata&display=swap" rel="stylesheet">
 
-body {
-  height: 100vh;
-  background-color: #61eb83;
-  /* display: flex; */
-  align-items: center; 
-  justify-items: center;
-  padding: 5px 20%;
-  border: 40px solid rgb(21, 126, 74);
-}
+    <title>My Tempreture Converter</title>
+    <link rel="stylesheet" href="TempConv.css" />
+  </head>
+  <body>
 
-.head{
-  margin-top: 5px;
-  box-sizing: border-box;
-  color: black;
-  text-align: center;
-  font-size: 36px;
-  font-family:'Diplomata', cursive;
-  margin: 15px 5px;
-}
+     <div class="head">Tempreture Converter</div>
+    
+    <div class="container">
+       <div class=cf>
+           <label for="celsius">Celsius</label>
+           <input type="number" id="celsius" />
+        </div>
+        <div class="cf">
+           <label for="Fahrenheit">Fahrenheit</label>
+           <input type="number" id="fahrenheit" />
+        </div>
+        <div class="cf">
+            <label for="Kelvin">Kelvin</label>
+            <input type="number" id="Kelvin" />
+        </div>
+    </div>
+    
+    <script src="TempConv.js"></script>
+  </body>
+</html>
 
-.container {
-  width: 750px;
-  height: 350px;
-  background-color: rgb(250, 86, 149);
-  padding: 70px 40px;
-  margin-top:40px ;
-  box-shadow: 0 20px 25px white;
-  border-radius: 8px;
-  border: 3px ;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  
-}
 
-.cf {
-  width: 45%;
-  margin: 0 5px;
-  align-items: center;
-}
 
-input {
-  width: 100%;
-  height: 50px;
-  border-radius: 6px;
-  border: 3px solid #080808;
-  outline: none;
-  margin-top: 8px;
-  padding: 0 10px;
-}
-
-input:focus {
-  border-color: #5e8b7e;
-}
 
 
 
